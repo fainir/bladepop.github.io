@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html ng-app="example">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Color Picker</title>
+    <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="../dist/colorPickerStyle.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.8/angular.js" data-semver="1.4.8"></script>
+    <script src="../dist/colorPicker.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl" style="padding: 10px">
+
+<h1>Angular.JS Color picker by Daniel Baruch</h1>
+<a href="https://github.com/bladepop/colorpicker">github repo</a>
+
+<p>Selected color is {{color}}</p>
+
+<div style="margin-left: 50px">
+    <color-picker color="color" options="options" on-color-changed="colorChanged(newColor, oldColor)"></color-picker>
+</div>
+
+</body>
+
 </html>
