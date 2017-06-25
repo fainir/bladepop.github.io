@@ -47537,7 +47537,7 @@ module.exports = Content;
 'use strict';
 
 let createYoutubeEmbed = (key) => {
-    return '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + key + '" frameborder="0" allowfullscreen></iframe><br/>';
+    return '<iframe width="70%" height="315" src="https://www.youtube.com/embed/' + key + '" frameborder="0" allowfullscreen></iframe><br/>';
 };
 
 let transformYoutubeLinks = (text) => {
